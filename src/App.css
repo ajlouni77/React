@@ -1,0 +1,136 @@
+/* ✅ تعميم الأساسيات */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* تنسيق الـ navbar */
+nav {
+    background-color: #003366; /* لون الخلفية أزرق داكن */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* تنسيق الروابط داخل الـ navbar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* تأثير عند التمرير على الروابط */
+nav ul li a:hover {
+    color: #ff6600; /* تغيير اللون عند التمرير */
+    border-bottom: 2px solid #ff6600; /* إضافة خط تحت الرابط */
+}
+
+/* تنسيق الـ navbar عند التمرير */
+body {
+    margin-top: 70px; /* إزاحة محتوى الصفحة ليظهر أسفل الـ navbar */
+}
+
+
+.user-info {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.logout-button {
+  margin-left: 15px;
+  padding: 5px 10px;
+  background-color: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: darkred;
+}
+
+/* ✅ تنسيق المحتوى الرئيسي */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ✅ تنسيق الأقسام الرئيسية */
+.page {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: white;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.page h1 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* ✅ تنسيق نموذج التسجيل */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+.signup-form input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3;
+}
+
+/* ✅ تنسيق الـ Footer */
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
